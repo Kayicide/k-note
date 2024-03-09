@@ -1,11 +1,6 @@
-import { unstable_noStore as noStore } from "next/cache";
 import Link from "next/link";
-import { ThemeToggle } from "~/components/theme-toggle";
-import { buttonVariants } from "~/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "~/components/ui/card";
+import { unstable_noStore as noStore } from "next/cache";
 import { UserAuthForm } from "~/components/user-auth-form";
-import { cn } from "~/lib/utils";
-
 import { getServerAuthSession } from "~/server/auth";
 
 export default async function Home() {
@@ -14,22 +9,6 @@ export default async function Home() {
 
   return (
     <>
-    {/* <div className="md:hidden">
-        <img
-            src="/examples/authentication-light.png"
-            width={1280}
-            height={843}
-            alt="Authentication"
-            className="block dark:hidden"
-        />
-        <img
-            src="/examples/authentication-dark.png"
-            width={1280}
-            height={843}
-            alt="Authentication"
-            className="hidden dark:block"
-        />
-    </div> */}
       <div className="container relative h-dvh flex-col items-center justify-center grid lg:max-w-none lg:grid-cols-2 lg:px-0">
         <div className="relative hidden h-full flex-col bg-muted p-10 text-white lg:flex dark:border-r">
           <div className="absolute inset-0 bg-zinc-900" />
