@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { Separator } from "~/components/ui/separator";
-import { Actions } from "../notes/_components/actions";
+import { Actions } from "./actions";
 
 export function Header() {
   return (
