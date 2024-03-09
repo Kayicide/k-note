@@ -14,7 +14,9 @@ interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
   return (
     <div className={cn("grid gap-6", className)} {...props}>
-      <Button variant="outline" type="button" onClick={() => signIn("discord")}>
+      <Button variant="outline" type="button" onClick={() => signIn("discord", {
+        callbackUrl: `${window.location.origin}/notes`,
+      })}>
         <Icons.discord className="mr-2 h-4 w-4" />
         Discord
       </Button>

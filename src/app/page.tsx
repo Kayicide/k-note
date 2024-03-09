@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { unstable_noStore as noStore } from "next/cache";
-import { UserAuthForm } from "~/components/user-auth-form";
+import { UserAuthForm } from "~/app/_components/user-auth-form";
 import { getServerAuthSession } from "~/server/auth";
 
 export default async function Home() {
